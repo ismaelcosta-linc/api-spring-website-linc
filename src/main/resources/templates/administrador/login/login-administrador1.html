@@ -1,0 +1,125 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}" style="height: 100%;display: contents;" lang="en-US"><head>
+	
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		  
+		  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		  <title>Login - Administrador</title>
+		  <meta name="robots" content="max-image-preview:large">
+		  
+		  <script type="text/javascript">
+		  	  window.history.pushState("", "", "/");
+		</script>
+		
+		<style>
+			@media (max-width: 500px) { 
+			  .ajusta {font-size: 30px !important;}
+			  .P1 {display: none !important;}
+			  .P2 {width: 100% !important;}
+
+			}
+			@media (min-width: 501px){
+			  .P1 {width: 38% !important;}
+			  .P2 {width: 72% !important;}
+			}
+			@media (min-width: 1000px){
+			  .P1 {width: 60% !important;}
+			  .P2 {width: 40% !important;}
+			}
+		</style>
+		
+    </head>
+    <body style="display: contents;" class="pace-done preloader-done">	
+		
+			<link rel="stylesheet" href="css/css-login-administrador/style-login-administrador.css" type="text/css" media="all">
+			<script type="text/javascript" src="js/js-login-administrador/js-login-administrador1.js"></script>
+			
+
+		<form action="/login-administrador" method="post" style="height: 100%;display: contents;">
+			<div class="vertical-menu clearfix ajustaAltura" style="background: rgba(0,0,0,0.50); left: 0px; margin-right: auto; margin-left: auto; margin-top: 0.1%; margin-bottom: 10rem;">
+				<div class="vertical-logo-wrap">
+					<h1 style="padding-top: 3rem;padding-bottom: 3rem;">LINC</h1>	
+				</div>
+				<nav>
+					<div>
+						<div style="text-align: center;">
+							<div>
+								<input type="text" name="username" style="height: 1.8rem;">
+							</div>                          
+							<div>
+								<input type="password" name="password" style="height: 1.8rem;margin-top: 1rem;">
+							</div>  
+<!-- 								<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />  padrao e obrigatorio para prevenção de ataque -->
+						</div>  
+					</div>
+					
+				</nav>
+				<div class="vertical-footer-wrap">
+					<div class="fullscreen-footer-social">
+						<div class="login-socials-wrap clearfix">
+							<aside id="msocial-widget-2" class="widget MSocial_Widget">
+								<div class="social-header-wrap">
+									<ul style="padding-top: 1rem;">				
+										<li class="social-icon">
+											<a class="ntips" title="Facebook" href="#" target="_blank">
+												<i class="fa fa-facebook"></i>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a class="ntips" title="Twitter" href="#" target="_blank">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a class="ntips" title="Instagram" href="#" target="_blank">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a class="ntips" title="500px" href="#" target="_blank">
+												<i class="fa fa-500px"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+					</div>
+					<div class="vertical-footer-copyright" style="padding-top: 1rem;padding-bottom: 1rem;">API Website - Linc 2022.</div>
+				</div>
+			</div>
+
+<!-- 			<div class="slideshow-control-item mtheme-fullscreen-toggle fullscreen-toggle-offcamera fullscreen-toggle-off"> -->
+<!-- 				<i class="feather-icon-plus"></i> -->
+<!-- 			</div> -->
+
+
+				<div style="vertical-align: bottom;margin-top: 2rem;padding-top: 2rem;">
+					<div style="width: 100%; text-align: right; padding-right: 3%;">
+						<h1 class="ajusta" style="color: #ffffff;">Administração</h1>
+						<div class="" style="color: #fcfcfc;">
+							<p class="P1" style="width: 60%; display: inline-block;"></p>
+							<p class="P2" style="width: 40%; display: inline-block;">Sistema de gerenciamento entidades. Cadastre, edite e remova dados de entidades do sistema.</p>
+						</div>
+						<div class="" style="color: #ffffff; margin-top: 1rem;">
+							<a class="positionaware-button" style="border-color: #fff;color: #fff !important;">
+								<button type="submit" style="background: rgba(0,0,0,0); border: 0; color: #fff; letter-spacing: 1.2px;">Entrar</button>
+								<span><i class="indicate-arrow feather-icon-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			<div class="site-back-cover"></div>
+			<script type="text/javascript" src="js/js-login-administrador/js-login-administrador2.js"></script>
+			<script type="text/javascript" src="js/js-login-administrador/js-login-administrador3.js"></script>
+			<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+			<ul id="supersized" class="quality" style="visibility: visible;">
+				<li class="slide-1 activeslide" style="visibility: visible; opacity: 1;">
+					<a><img src="assets/otherworldly-incantations-forest-worldbuilding.jpg" alt="undefined" style="width: 1400px; left: 0px; top: -139.5px; height: 1100px;"></a>
+				</li>
+			</ul>
+		</form>
+	
+</body></html>

@@ -1,0 +1,333 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}" lang="en-US">
+	<head>
+	
+   		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	  
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>Home - Administrador</title>
+		<meta name="robots" content="max-image-preview:large">
+	  
+		<script type="text/javascript">
+	  		window.history.pushState("", "", "/");
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="../css/css-home-administrador/style-home-administrador.css" >
+
+		
+    </head>
+	<body class="page-template-default page page-id-5857 page-child parent-pageid-5855 woocommerce-js 
+				fullscreen-mode-off page-has-full-background rightclick-block single-author theme-is-dark 
+				demo menu-is-vertical page-is-not-fullscreen fullscreen-ui-switchable page-is-opaque theme-fullwidth 
+				body-dashboard-push footer-is-off pagebuilder-active edge-to-edge menu-loaded pace-done preloader-done spinning-done goto-top-active">
+	
+	
+<header th:fragment="cabecalho-home-administrador">
+	
+			
+ 	<script type="text/javascript" src="../js/js-home-administrador/js-home-administrador1.js"></script> 	
+		
+		
+	<div class="loading-spinner" style="opacity: 0; display: none;">
+		<div class="loading-right-side">
+			<div class="loading-bar"></div>
+		</div>
+		<div class="loading-left-side">
+			<div class="loading-bar"></div>
+		</div>
+	</div>
+	
+	<div class="responsive-menu-wrap">
+		<nav id="mobile-toggle-menu" class="mobile-toggle-menu mobile-toggle-menu-close">
+			<span class="mobile-toggle-menu-trigger" style="font-size: 2.5rem;color: #162929;"><span>Menu</span>X</span>
+		</nav>
+		<div class="mobile-menu-toggle" style="background-color: #162929;">
+			<div class="logo-mobile">
+				<a href="/administrador">
+					<h2>LINC</h2>
+				</a>				
+			</div>
+		</div>
+	</div>
+	<div class="responsive-menu-overlay" style="display: block;"></div>
+	<div class="responsive-mobile-menu">
+		<nav>
+			<ul id="menu-main-menu" class="mtree">
+						
+			<li id="menu-item-11771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+				<a href="#" style="cursor: pointer;">Cliente</a>
+				<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+					<li id="menu-item-11742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+						<a href="/cadastrar-novo-cliente">Cadastrar Cliente</a>
+					</li>
+					<li id="menu-item-11741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+						<a href="/listar-clientes-cadastrados">Lista de Clientes</a>
+					</li>
+				</ul>
+			</li>
+			<li id="menu-item-11771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+				<a href="#" style="cursor: pointer;">Serviço</a>
+				<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+					<li id="menu-item-11742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+						<a href="/cadastrar-novo-Administrador">Cadastrar Serviço</a>
+					</li>
+					<li id="menu-item-11741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+						<a href="/listar-servicos-cadastrados">Lista de Serviços</a>
+					</li>
+				</ul>
+			</li>
+			<li id="menu-item-11771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+				<a href="#" style="cursor: pointer;">Produto</a>
+				<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+					<li id="menu-item-11742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+						<a href="/cadastrar-novo-produto">Cadastrar Produto</a>
+					</li>
+					<li id="menu-item-11741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+						<a href="/listar-produtos-cadastrados">Lista de Produtos</a>
+					</li>
+					<li id="menu-item-11741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+						<a href="/listar-produtos-vendidos">Lista de Vendas</a>
+					</li>
+				</ul>
+			</li>
+			<li id="menu-item-11771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+				<a href="#" style="cursor: pointer;">Admin</a>
+				<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+					<li id="menu-item-11742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+						<a href="/cadastrar-novo-produto">Cadastrar Administrador</a>
+					</li>
+					<li id="menu-item-11741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+						<a href="/listar-Administradors-cadastrado">Lista de Administrador</a>
+					</li>
+				</ul>
+			</li>
+			<li id="menu-item-11771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+				<a href="#" style="cursor: pointer;">Master</a>
+				<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+					<li id="menu-item-11742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+						<a href="/acesso-master">Acesso Master</a>
+					</li>
+					<li id="menu-item-11741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+						<a href="/listar-Administradors-excluir-cadastrado">Remover Administrador</a>
+					</li>
+				</ul>
+			</li>
+			</ul>	
+		</nav>
+	<div class="vertical-footer-wrap">
+		<div style="text-align: left; margin-bottom: 2rem;">
+<!-- 			<form action="/sair-administrador" method="post" > -->
+<!-- 				<button type="submit" style="background: rgba(0,0,0,0); border: rgba(0,0,0,0.0); color: #fff; font-size: 14px; font-weight: 600;">Sair</button> -->
+<!-- 				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />padrao e obrigatorio para prevenção de ataque -->
+<!-- 			</form> -->
+			<a href="/logout-administrador" style="color: #fff; font-size: 14px; font-weight: 600;">Sair</a>
+		</div>
+		<div class="fullscreen-footer-social">
+			<div class="login-socials-wrap clearfix">
+				<aside id="msocial-widget-3" class="widget MSocial_Widget">
+					<div class="social-header-wrap">
+						<ul>				
+							<li class="social-icon">
+								<a class="ntips" title="Facebook" href="#" target="_blank">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="social-icon">
+								<a class="ntips" title="Twitter" href="#" target="_blank">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="social-icon">
+								<a class="ntips" title="Instagram" href="#" target="_blank">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li class="social-icon">
+								<a class="ntips" title="500px" href="#" target="_blank">
+									<i class="fa fa-500px"></i>
+								</a>
+							</li>
+							<li class="contact-text">
+							</li>
+						</ul>
+					</div>
+				</aside>			
+			</div>
+		</div>
+		<div class="vertical-footer-copyright">API Website - linc 2022.</div>
+	</div>
+	<div class="cleafix"></div>
+	</div>
+	
+	
+	<div class="vertical-menu-outer">
+		<div class="vertical-menu-wrap">
+			<div class="vertical-menu clearfix" style="background: rgba(0,0,0,0.50);">
+				<div class="vertical-logo-wrap">
+					<a href="/administrador"><h1 style="padding-top: 3rem;padding-bottom: 3rem;">LINC</h1></a>	
+				</div>
+				<nav>
+					<ul id="menu-main-menu-2" class="mtree">
+											
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+							<a href="#" style="cursor: pointer; color: #fff;">Cliente</a>
+							<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742" 
+									style="opacity: 1; transform: translateY(0px);"><a href="/cadastrar-novo-cliente">Cadastrar Cliente</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741" 
+									style="opacity: 1; transform: translateY(0px);"><a href="/listar-clientes-cadastrados">Lista de Cliente</a></li>
+							</ul>
+							<div>
+				
+							</div>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+							<a href="#" style="cursor: pointer; color: #fff;">Serviço</a>
+							<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+									<a href="/cadastrar-novo-servico">Cadastrar Serviço</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+									<a href="/listar-servicos-cadastrados">Lista de Serviço</a></li>
+							</ul>
+							<div>
+				
+							</div>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+							<a href="#" style="cursor: pointer; color: #fff;">Produto</a>
+							<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+									<a href="/cadastrar-novo-produto">Cadastrar Produto</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+									<a href="/listar-produtos-cadastrados">Lista de Produtos</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+									<a href="/listar-produtos-vendidos">Lista de Vendas</a></li>
+							</ul>
+							<div>
+								
+							</div>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+							<a href="#" style="cursor: pointer; color: #fff;">Admin</a>
+							<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+									<a href="/cadastrar-novo-Administrador">Cadastrar Administrador</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+									<a href="/listar-Administradors-cadastrado">Lista de Administrador</a></li>
+							</ul>
+							<div>
+								
+							</div>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11771 mtree-node mtree-closed">
+							<a href="#" style="cursor: pointer; color: #fff;">Master</a>
+							<ul class="sub-menu mtree-level-1" style="overflow: hidden; height: 0px; display: none;">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11742">
+									<a href="/acesso-master">Acesso Master</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11741">
+									<a href="/listar-Administradors-excluir-cadastrado">Remover Administrador</a></li>
+							</ul>
+							<div>
+								
+							</div>
+						</li>
+					</ul>	
+				</nav>
+				<div class="vertical-footer-wrap">
+					<div style="text-align: left; margin-bottom: 2rem;">
+<!-- 						<form action="/sair-administrador" method="post" > -->
+<!-- 							<button type="submit" style="background: rgba(0,0,0,0); border: rgba(0,0,0,0.0); color: #fff; font-size: 14px; font-weight: 600;">Sair</button> -->
+<!-- 							<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />padrao e obrigatorio para prevenção de ataque -->
+<!-- 						</form> -->
+						<a href="/logout-administrador" style="color: #fff; font-size: 14px; font-weight: 600;">Sair</a>
+					</div>
+					<div class="fullscreen-footer-social">
+						<div class="login-socials-wrap clearfix">
+							<aside id="msocial-widget-2" class="widget MSocial_Widget">
+								<div class="social-header-wrap">
+									<ul style="padding-top: 1rem;">				
+										<li class="social-icon">
+											<a class="ntips" title="Facebook" href="#" target="_blank">
+												<i class="fa fa-facebook"></i>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a class="ntips" title="Twitter" href="#" target="_blank">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a class="ntips" title="Instagram" href="#" target="_blank">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a class="ntips" title="500px" href="#" target="_blank">
+												<i class="fa fa-500px"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</aside>			
+						</div>
+					</div>
+					<div class="vertical-footer-copyright" style="padding-top: 1rem;padding-bottom: 1rem; color: #fff;">
+						API Website - linc 2022.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</header>
+
+<!-- 
+<div id="home" class="container-wrapper container-fullwidth" style="background: rgba(0,0,0,0.50);">
+		<div class="container clearfix">	
+			<div class="mtheme-modular-column " style="padding-bottom: 8rem;;padding-top:56px; ">				
+				<div class="mtheme-cell-inner" style="padding-left: 1.80rem; padding-right: 1.80rem;">
+				
+				</div>			
+			</div>
+		</div>
+	</div>
+ -->
+
+<div th:fragment="footer-home-administrador">
+	<script type="text/javascript" src="../js/js-home-administrador/js-home-administrador2.js"></script>
+	<script type="text/javascript" src="../js/js-home-administrador/js-home-administrador3.js"></script>
+	<script type="text/javascript" src="../js/js-home-administrador/js-home-administrador4.js"></script>
+	<script type="text/javascript" src="../js/js-home-administrador/js-home-administrador5.js"></script>
+	<script type="text/javascript" src="../js/js-home-administrador/js-home-administrador6.js"></script> 
+	
+	<ul id="supersized" class="quality" style="visibility: visible;">
+		<li class="slide-1 activeslide" style="visibility: visible; opacity: 1;">
+			<a><img src="../assets/otherworldly-incantations-forest-worldbuilding.jpg" alt="undefined" style="width: 1400px; left: 0px; top: -139.5px; height: 1100px;"></a>
+		</li>
+	</ul>
+	
+	<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible">
+		<div style="display: none;">Facebook</div>
+		<div style="display: none;">Facebook</div>
+		<div>Facebook</div>
+	</div>
+	<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible">
+		<div style="display: none;">Twitter</div>
+		<div>Twitter</div>
+	</div>
+	<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible">
+		<div style="display: none;">Instagram</div>
+		<div style="display: none;">Instagram</div>
+		<div style="display: none;">Instagram</div>
+		<div>Instagram</div>
+	</div>
+	<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible">
+		<div style="display: none;">500px</div>
+		<div>500px</div>
+	</div>
+	
+</div>
+</body>
+
+</html>
